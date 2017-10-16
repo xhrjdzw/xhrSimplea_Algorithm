@@ -1,8 +1,7 @@
-package offer7_stack;
+package offer1_stack;
 
 
 import java.util.Stack;
-import java.util.logging.Logger;
 
 
 /**
