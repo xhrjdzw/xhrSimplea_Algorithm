@@ -1,18 +1,23 @@
+/*
 
 
+*/
 /**
  * 题目：输入一颗二叉树的根结点，判断该树是不是平衡二叉树。
  * 如果某二叉树中任意结点的左右子树的高度相差不超过1，那么它就是一棵平衡二叉树。
  * @author 徐浩然
  * @version BalanceTree, 2017-10-16
- */
+ *//*
+
 
 
 public class BalanceTree
 {
-    /*平衡二叉树就是每个结点左右子树的高度相差在-1到1
+    */
+/*平衡二叉树就是每个结点左右子树的高度相差在-1到1
     * 计算每一个节点的左右子树的高度是否是相差是1
-    * 来判断是否是符合题设的*/
+    * 来判断是否是符合题设的*//*
+
 
     public static <T> boolean isBalanceTree_1(Node<T> root){
         //健壮性判断：若树为空
@@ -39,9 +44,11 @@ public class BalanceTree
 
 
 
-    /**
+    */
+/**
      * 测试
-     */
+     *//*
+
     public static void main(String[] args){
         //构造一棵平衡二叉树
         Node<Integer> node1 = new Node<Integer>();
@@ -76,3 +83,4 @@ public class BalanceTree
         System.out.println(isBalanceTree_1(node1));
     }
 }
+*/

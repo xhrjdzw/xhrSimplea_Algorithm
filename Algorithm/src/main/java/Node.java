@@ -1,9 +1,12 @@
+/*
 import java.util.*;
 
+*/
 /**
  * @author 徐浩然
  * @version Node, 2017-10-16
- */
+ *//*
+
 public class Node<T>
 {
     private Node<T> root; // a T type variable to store the root of the list
@@ -33,13 +36,15 @@ public class Node<T>
         this.children.add(child);
     }
 
-    /**
+    */
+/**
      * This method doesn't return anything and takes a parameter of
      * the object type you are trying to store in the node
      *
      * @param  Obj  an object
      * @param
-     **/
+     **//*
+
     public void addChild(Node<T> child)
     {
         child.root = null;
@@ -109,3 +114,4 @@ public class Node<T>
         }
     }
 }
+*/

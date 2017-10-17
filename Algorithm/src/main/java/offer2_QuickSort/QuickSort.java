@@ -8,37 +8,45 @@ package offer2_QuickSort;
  */
 public class QuickSort
 {
+    /**
+     * 测试
+     */
+    public static void main(String[] args)
+    {
+        int[] arg = new int[]{5, 2, 1, 9, 0, 3, 4, 6};
+        QuickSort(arg);
+
+        System.out.println(printArray(arg));
+    }
+
     private static int partition(int[] arr, int start, int end)
     {
-        if (arr.length <=0)
-        {
-            System.out.println("null error");
-            return -1;
-        }
-        if(start<0 || end<0 || start>end){
-            System.out.println("start、end  error");
-            return -1;
-        }
+
         //i 数组头  j 数组尾
-        int i=start+1,j=end;
+        int i = start + 1, j = end;
         //主元数据
         int key = arr[start];
         //如果首尾没有相遇则继续循环
-        while (i<j){
+        while (i < j)
+        {
             //i 从左到右边扫 知道碰到一个比主元素大的数
-            if (arr[i]<=key && i<end){
+            while (arr[i] <= key && i < end)
+            {
                 i++;
             }
             //j 反之
-            if (arr[j]>=key && j>start){
+            while (arr[j] >= key && j > start)
+            {
                 j--;
             }
             //当i j停下的时候 需要交换
-            swap(arr,i,j);
+            if (i < j)
+            {
+                swap(arr, i, j);
+            }
         }
-        swap(arr,start,j);
-        System.out.println("i :    " +i+ "j    :"+j);
-        System.out.println("某一趟排序结果:"+printArray(arr));
+        swap(arr, start, j);
+        System.out.println("某一趟排序结果:" + printArray(arr));
         //返回新的主元下标
         return j;
 
@@ -46,18 +54,19 @@ public class QuickSort
 
     public static void QuickSort(int[] arr)
     {
-        QuickSort(arr,0,arr.length-1);
+        QuickSort(arr, 0, arr.length - 1);
     }
 
     private static void QuickSort(int[] arr, int start, int end)
     {
-        if (start <end){
+        if (start < end)
+        {
             //获取主元
-            int key =partition(arr,start,end);
+            int key = partition(arr, start, end);
 
-            QuickSort(arr,start,key-1);
+            QuickSort(arr, start, key - 1);
 
-            QuickSort(arr,key+1,end);
+            QuickSort(arr, key + 1, end);
         }
     }
 
@@ -70,13 +79,14 @@ public class QuickSort
 
     private static String printArray(int[] arr)
     {
-        StringBuilder BC = new StringBuilder();
+        StringBuilder bc = new StringBuilder();
 
         for (int i = 0; i < arr.length; i++)
         {
-            BC.append(arr[i]);
+            bc.append(arr[i]);
         }
-        return BC.toString();
+        return bc.toString();
     }
+
 
 }

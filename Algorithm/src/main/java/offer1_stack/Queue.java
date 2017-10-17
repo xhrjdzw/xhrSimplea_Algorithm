@@ -1,37 +1,48 @@
+/*
 package offer1_stack;
 
 
 import java.util.Stack;
 
 
+*/
 /**
  * 用两个栈实现一个队列
  *
  * @author 徐浩然
  * @version Queue, 2017-10-16
- */
+ *//*
+
 public class Queue<T>
 {
 
-    /**
+    */
+/**
      * 当前队列大小
-     */
+     *//*
+
     private int queSize;
-    /**
+    */
+/**
      * 队列最大容量
-     */
+     *//*
+
     private int maxSize;
-    /**
+    */
+/**
      * 两个栈
-     */
+     *//*
+
     private Stack<T> stack1;
     private Stack<T> stack2;
 
-    /**
+    */
+/**
      * 初始化队列
      *
      * @param maxSize 设置最大容量
-     **/
+     **//*
+
     public Queue(int maxSize)
     {
         if (maxSize <= 0)
@@ -44,11 +55,13 @@ public class Queue<T>
         stack2 = new Stack<T>();
     }
 
-    /**
+    */
+/**
      * 入队
      *
      * @param obj 入队的元素
-     */
+     *//*
+
     public boolean push(T obj)
     {
         if (obj == null)
@@ -68,9 +81,11 @@ public class Queue<T>
         return true;
     }
 
-    /**
+    */
+/**
      * 出队
-     */
+     *//*
+
     public T pop()
     {
         //队空
@@ -87,9 +102,11 @@ public class Queue<T>
         }
         return stack2.pop();
     }
-    /**
+    */
+/**
      * 打印队列
-     */
+     *//*
+
     @Override
     public String toString(){
         System.out.println("Queue---maxSize:"+maxSize+"---queSize:"+queSize+"------");
@@ -117,3 +134,4 @@ public class Queue<T>
 
 
 }
+*/
