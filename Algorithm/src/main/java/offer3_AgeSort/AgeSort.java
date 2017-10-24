@@ -7,5 +7,21 @@ package offer3_AgeSort;
  */
 public class AgeSort
 {
+    public static void ageSort(int[] ages){
+        int[] countAge = new int[100];
+        for (int i = 0; i <ages.length ; i++)
+        {
+            countAge[ages[i]]++;
+        }
+        int curIndex = 0;
+        for (int i = 0; i <countAge.length ; i++)
+        {
+            for (int j = 0; j < countAge[i]; j++)
+            {
+                ages[curIndex]= i;
+                curIndex ++;
+            }
+        }
+    }
 }
 
