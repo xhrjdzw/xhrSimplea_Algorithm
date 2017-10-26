@@ -29,7 +29,7 @@ public class QuickSort
         //如果首尾没有相遇则继续循环
         while (i < j)
         {
-            //i 从左到右边扫 知道碰到一个比主元素大的数
+            //i 从左到右边 扫 知道碰到一个比主元素大的数
             while (arr[i] <= key && i < end)
             {
                 i++;
