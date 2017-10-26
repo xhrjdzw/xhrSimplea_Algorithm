@@ -22,7 +22,7 @@ public class QuickSort
     private static int partition(int[] arr, int start, int end)
     {
 
-        //i 数组头  j 数组尾
+        //i 数组头   j 数组尾
         int i = start + 1, j = end;
         //主元数据
         int key = arr[start];
